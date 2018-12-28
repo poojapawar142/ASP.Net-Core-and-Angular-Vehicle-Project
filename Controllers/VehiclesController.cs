@@ -26,7 +26,7 @@ namespace WebApplicationWithCore.Controllers
         }
         [HttpPost]
         public async Task<IActionResult> CreateVehicle([FromBody] SaveVehicleResources vehicleResources)
-        {
+        {   
             if(!ModelState.IsValid)
             return BadRequest(ModelState);
 
